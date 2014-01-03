@@ -1,4 +1,8 @@
 Automata-Generation
 ===================
 
-Given a regular expression, generate the corresponding NFA, DFA and minimized DFA.
+Various converters, involving concepts from languages and grammars.
+
+Available so far :
+> Regular Expression to Non-deterministic Finite Automata converter
+> Right Linear Grammar to Finite State Machine converter
