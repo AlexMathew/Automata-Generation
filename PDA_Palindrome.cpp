@@ -31,6 +31,9 @@ public:
 		string::iterator it = input_string.begin();
 		char cur;
 		while(it != input_string.end()) {
+			if(input.size() == 0) {
+				return false;
+			}
 			cur = *it;
 			switch(cur_state) {
 				case 0:
