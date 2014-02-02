@@ -30,8 +30,9 @@ public:
 	bool check_if_palindrome(string input_string) {
 		string::iterator it = input_string.begin();
 		char cur;
+		int flag = 0;
 		while(it != input_string.end()) {
-			if(input.size() == 0) {
+			if(flag && input.size() == 0) {
 				return false;
 			}
 			cur = *it;
@@ -42,6 +43,7 @@ public:
 						cur_state = 1;
 					} else if(is_slash(cur)) {
 						cur_state = 2;
+						flag = 1;
 					} else {
 						return false;
 					}
